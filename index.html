@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora</title>
+</head>
+<body>
+  <h1>Calculadora</h1>
+  <input type="number" id="inputA" placeholder="Número A" />
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="inputB" placeholder="Número B" />
+  <button id="calculateBtn">Calcular</button>
+  <p id="result">Resultado: </p>
+
+  <script type="module">
+    import { createCalculator } from "./src/components/Calculator.js";
+    createCalculator();
+  </script>
+</body>
+</html>
